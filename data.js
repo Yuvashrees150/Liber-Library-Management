@@ -138,4 +138,4 @@ const data = [
 
 const authors = ["A. P. J. Abdul Kalam","Yann Martel","J. K. Rowling","E. L. James","Dan Brown","Aditi Singhal","Arthur Conan Doyle","Anand Neelakantan","Jane Austen"];
 
-const tags = ["education", "maths","myth","tech","novel", "non-fiction","fiction", "adventure","mystery", "thriller","autobiography"];
+const tags = ["education", "maths","myth","tech","novel","non-fiction","fiction", "adventure","mystery", "thriller","autobiography"];

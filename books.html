@@ -60,7 +60,7 @@
               <div class="form-group">
                 <label for="author">Author</label>
                 <select class="form-select" id="auth" name="author">
-                </select>
+                </select>3
               </div>
 
               <div class="form-group">
@@ -80,13 +80,13 @@
             <p>Look out these amazing categories!</p>
             <ul class="nav nav-pills flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="/books.html?author=none&tags=Novel">Novels</a>
+                <a class="nav-link" href="books.html?author=none&tags=novel">Novels</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/books.html?author=none&tags=RomCom">RomCom</a>
+                <a class="nav-link" href="books.html?author=none&tags=romance">RomCom</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/books.html?author=none&tags=Education">Education</a>
+                <a class="nav-link" href="books.html?author=none&tags=education">Education</a>
               </li>
             </ul>
             <hr class="d-sm-none">
@@ -118,9 +118,9 @@
   const tag = urlp.get('tags');
 
   for(var i = 0; i < data.length; i++) {
-    if(author == null || author == "none" ||  data[i].author === author) {
-      if(tag == null || tag === "none" || data[i].tags.includes(tag)) {
-        text += "<tr><td><img src=\"" + data[i].image + "\" class=\"float-start rounded book-list\"  width=\"180vw\" height=\"180vw\"> <h2 >" + data[i].name + 
+    if(author == null || author == "none" ||  data[i].author == author) {
+      if(tag == null || tag == "none" || data[i].tags.includes(tag)) {
+        text += "<tr><td><img src=\" " + data[i].image + "\" class=\"float-start rounded book-list\"  width=\"180vw\" height=\"180vw\"> <h2 >" + data[i].name + 
           "</h2><h5>" + data[i].author+", " + data[i].year + 
           "</h5><h6> <span class=\"badge bg-secondary\">" + data[i].tags[0] + 
             "</span>  <span class=\"badge bg-secondary\">" + data[i].tags[1] + 
@@ -153,7 +153,7 @@
 <script>
   $(document).ready(function () {
   $('#dtBasicExample').DataTable();
-  $('.dataTables_length').addClass('bs-select');
+  // $('.dataTables_length').addClass('bs-select');
 
 });
 
